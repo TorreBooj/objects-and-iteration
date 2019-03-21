@@ -29,37 +29,15 @@ var bondFilms = [
 
 // 1. Using a for loop, create a new array called bondTitles with only the titles of the Bond films, 
 // and console.log the new array.
-var bondTitles = [];
 
-for (var i = 0; i < bondFilms.length; i++) {
-	bondTitles.push(bondFilms[i].title);
-}
-
-console.log(bondTitles);
 
 
 // 2. Create a new array oddBonds, of only the Bond films released on odd-numbered years.
 // Again, log this new array to the console.
-var oddBonds = [];
 
-for (var i = 0; i < bondFilms.length; i++) {
-	if (bondFilms[i].year % 2 !== 0) {
-		oddBonds.push(bondFilms[i].title);
-	}
-}
-
-console.log(oddBonds);
 
 
 // 3. Determine the total cumulative gross of the Bond franchise, and console.log the result. Hint: To make the grosses into usable
 // numbers, look into the .replace() Javascript method (there are many ways to do this, however). Look into parseInt also.
-var totalGross = 0;
 
-for (var i = 0; i < bondFilms.length; i++) {
-  var plainString = bondFilms[i].gross.replace(/[,$]/g, '');
-  var grossNumber = parseInt(plainString);
-  totalGross += grossNumber;
-}
-
-console.log(totalGross);
 
